@@ -72,4 +72,8 @@ header ul > li {
     position: absolute;
 }
 
+#plus-icon {
+    cursor: pointer;
+}
+
 
