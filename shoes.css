@@ -9,7 +9,6 @@ h2 {
     position: absolute;
     margin-left: 18rem;
     align-items: center;
-    
 }
 
 ul {
@@ -22,7 +21,7 @@ ul {
 a {
     text-decoration: none;
     outline: none;
-    color:black;
+    color: black;
     font-weight: bold;
     margin-left: 1.5rem;
 }
@@ -30,35 +29,31 @@ a {
 .page {
     width: 90rem;
     position: relative;
-    
 }
 
 header {
-    /* width: 80;
-    height: 60px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 header > nav {
-	width:37rem;
-	height:100%;
+    width: 37rem;
+    height: 100%;
 }
 
 header ul {
-	width:100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
 header ul > li {
-	font-size:16px;
-	height: 100%;
-	display: flex;
-	align-items: center;
-   
+    font-size: 16px;
+    height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .Rectangle {
@@ -74,6 +69,32 @@ header ul > li {
 
 #plus-icon {
     cursor: pointer;
+}
+
+.image-container {
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.image-container img {
+    width: 240px;
+    height: 150px;
+    margin-left: 43px;
+    margin-top: 5px;
+    position: absolute;
+    border-radius: 13px;
+}
+
+.image-container textarea {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 43px;
+    width: 225px;
+    height: 80px;
+    resize: none;
+    padding: 5px;
+    font-family: Arial, sans-serif;
 }
 
 
