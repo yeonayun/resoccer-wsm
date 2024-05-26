@@ -60,3 +60,16 @@ header ul > li {
 	align-items: center;
    
 }
+
+.Rectangle {
+    margin-left: 16rem;
+    margin-top: 10rem;
+    position: absolute;
+}
+
+.Rectangle img {
+    margin-left: 3rem;
+    position: absolute;
+}
+
+
