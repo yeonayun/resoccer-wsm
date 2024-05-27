@@ -62,10 +62,51 @@ header ul > li {
 }
 
 .Rectangle {
-    margin-left: 16rem;
-    margin-top: 10rem;
+    margin: 10rem 0 0 16rem;
+    position: absolute;
 }
 
 .Rectangle img {
     margin-left: 3rem;
+}
+
+.shoes img{
+    position: absolute;
+    margin: 11rem 0 0 20rem;
+}
+
+.star, .star1, .star2 {
+    position: absolute;
+    margin: 22rem 0 0 20.5rem;
+}
+
+.star1{
+    margin-left: 40.5rem;
+}
+
+.star2{
+    margin-left: 61rem;
+}
+
+.best{
+    position: absolute;
+    margin: 10rem 0 0 31rem;
+}
+
+.puma, .adidas, .adidas1 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.puma p{
+    margin: 24.5rem 0 0 20.5rem;
+}
+
+.adidas p{
+    margin: 24.5rem 0 0 40.5rem;
+}
+
+.adidas1 p{
+    margin: 24.5rem 0 0 61rem;
 }
