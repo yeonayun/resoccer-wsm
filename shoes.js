@@ -82,6 +82,6 @@ function loadFromLocalStorage() {
     }
 }
 
-window.addEventListener('load', loadFromLocalStorage);
+
 
 
