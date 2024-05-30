@@ -84,7 +84,4 @@ function loadFromLocalStorage() {
 
 window.addEventListener('load', loadFromLocalStorage);
 
-// 이전 페이지로 이동할 때 로컬 스토리지에서 이미지 데이터를 삭제합니다.
-window.addEventListener('beforeunload', function() {
-    localStorage.removeItem('imageData');
-});
+
