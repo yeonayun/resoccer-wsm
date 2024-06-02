@@ -27,6 +27,11 @@ nav {
     position: relative;
 }
 
+.logo a{
+    text-decoration-line: none;
+    color:#000;
+}
+
 .menu-icon {
     display: none;
     font-size: 2rem;
