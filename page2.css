@@ -1,0 +1,157 @@
+/* CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #fff;
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #000;
+}
+
+header .logo {
+    font-size: 1.5rem;
+}
+
+nav {
+    position: relative;
+}
+
+.logo a {
+    text-decoration-line: none;
+    color:#000;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    column-gap: 70px;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.best {
+    position: absolute;
+    width: 4.5rem; height: 1.8rem;
+    margin: 6px 0 0 190px;
+    z-index: 1;
+}
+
+.Rectangle {
+    margin: 9rem auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+.base-image {
+    width: 17rem;
+    height: 22rem;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 15rem;
+    height: 10rem;
+}
+
+.plus{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: 70px 0 0 115px;
+}
+
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: -33px;
+        width: 400%;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu.show li {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .menu.show li:last-child {
+        margin-bottom: 0;
+    }
+
+    .menu.show li a {
+        display: block;
+        padding: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Rectangle {
+        margin: 5rem auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 60px;
+    }
+
+    .base-image,
+    .overlay-image {
+        width: 70%;
+        height: 0%;
+        margin-left: 70px;
+    }
+
+    .overlay-image {
+        top: 20px;
+        left: 23px;
+        width: 15rem;
+        height: 10rem;
+    }
+    
+}
