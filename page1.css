@@ -54,6 +54,70 @@ nav {
     font-weight: bold;
 }
 
+.best {
+    position: absolute;
+    width: 4.5rem; height: 1.8rem;
+    margin: 6px 0 0 190px;
+    z-index: 1;
+}
+
+.Rectangle {
+    margin: 9rem auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.image-container {
+    position: relative;
+}
+
+.base-image {
+    width: 17rem;
+    height: 22rem;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 15rem;
+    height: 10rem;
+}
+
+.puma, .adidas, .adidas1 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    margin: -130px 0 0 20px;
+}
+
+.star, .star1 {
+    height: 16px;
+    position: absolute;
+    margin: 200px 0 0 20px;
+}
+
+.star{
+    width: 90px;
+}
+
+.star1{
+    width: 55px;
+}
+
+.likes {
+    color: red;
+    font-size: 16px;
+    margin: 35px 0 0 170px;
+}
+
+.emheart{
+    position: absolute;
+    margin: 310px 0 0 230px;
+}
+
 @media (max-width: 600px) {
     .menu {
         display: none;
@@ -89,5 +153,63 @@ nav {
         padding: 1rem;
         width: 100%;
         text-align: center;
+    }
+
+    .Rectangle {
+        margin: 5rem auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+    }
+
+    .base-image,
+    .overlay-image {
+        width: 70%;
+        height: 0%;
+        margin-left: 70px;
+    }
+
+    .overlay-image {
+        top: 20px;
+        left: 23px;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .puma, .adidas, .adidas1 {
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        margin: -180px 0 0 95px;
+    }
+
+    .star, .star1{
+        height: 16px;
+        position: absolute;
+        margin: 200px 0 0 95px;
+    }
+
+    .star{
+        width: 90px;
+    }
+
+    .star1{
+        width: 55px;
+    }
+
+    .likes{
+        margin: 50px 0 0 180px;
+    }
+
+    .best{
+        margin: 8px 0 0 275px;
+    }
+
+    .emheart{
+        margin: 350px 0 0 310px;
+        position: absolute;
+        z-index: 1;
     }
 }
