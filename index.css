@@ -49,6 +49,13 @@ nav {
     font-weight: bold;
 }
 
+.best{
+    position: absolute;
+    width: 4.5rem; height: 1.8rem;
+    margin: 6px 0 0 190px;
+    z-index: 1;
+}
+
 .Rectangle {
     margin: 9rem auto 0 auto;
     position: relative;
@@ -57,20 +64,52 @@ nav {
     column-gap: 2rem;
 }
 
-.Rectangle img {
-    margin-left: 1.5rem;
+.image-container {
+    position: relative;
 }
 
-/* Media Queries */
+.base-image {
+    width: 17rem;
+    height: 22rem;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 20px;
+    left: 15px;
+    width: 15rem;
+    height: 10rem;
+}
+
+.puma, .adidas, .adidas1 {
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    margin: -130px 0 0 20px;
+}
+
+.star{
+    width: 90px;
+    height: 16px;
+    position: absolute;
+    margin: 200px 0 0 20px;
+}
+
+.likes{
+    color: red;
+    font-size: 16px;
+    margin: 35px 0 0 170px;
+}
+
 @media (max-width: 600px) {
     .menu {
         display: none;
         position: absolute;
         top: 100%;
         right: -33px;
-        width: 400%; /* 너비를 더 크게 조정 */
+        width: 400%;
         background: #fff;
-        flex-direction: column; /* 세로로 나열되도록 설정 */
+        flex-direction: column;
         align-items: center;
         margin-top: 10px;
     }
@@ -84,12 +123,12 @@ nav {
     }
 
     .menu.show li {
-        width: 100%; /* 아이템들이 전체 너비를 차지하도록 설정 */
-        margin-bottom: 50px; /* 각 li 요소들의 간격을 50px로 설정 */
+        width: 100%;
+        margin-bottom: 50px;
     }
 
     .menu.show li:last-child {
-        margin-bottom: 0; /* 마지막 li 요소에는 간격을 제거 */
+        margin-bottom: 0;
     }
 
     .menu.show li a {
@@ -105,10 +144,42 @@ nav {
         display: flex;
         flex-direction: column;
         align-items: center;
+        row-gap: 20px;
     }
 
-    .Rectangle img {
-        margin: 1rem 0;
-        width: 80%; /* 화면 크기에 맞게 이미지 너비 조정 */
+    .base-image,
+    .overlay-image {
+        width: 70%;
+        height: 0%;
+        margin-left: 70px;
+    }
+
+    .overlay-image {
+        top: 20px;
+        left: 23px;
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .puma, .adidas, .adidas1 {
+        position: absolute;
+        font-size: 14px;
+        font-weight: bold;
+        margin: -180px 0 0 95px;
+    }
+
+    .star{
+        width: 90px;
+        height: 16px;
+        position: absolute;
+        margin: 200px 0 0 95px;
+    }
+
+    .likes{
+        margin: 50px 0 0 180px;
+    }
+
+    .best{
+        margin: 8px 0 0 275px;
     }
 }
