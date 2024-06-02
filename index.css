@@ -27,7 +27,7 @@ nav {
     position: relative;
 }
 
-.logo a{
+.logo a {
     text-decoration-line: none;
     color:#000;
 }
@@ -54,7 +54,7 @@ nav {
     font-weight: bold;
 }
 
-.best{
+.best {
     position: absolute;
     width: 4.5rem; height: 1.8rem;
     margin: 6px 0 0 190px;
@@ -93,14 +93,14 @@ nav {
     margin: -130px 0 0 20px;
 }
 
-.star{
+.star {
     width: 90px;
     height: 16px;
     position: absolute;
     margin: 200px 0 0 20px;
 }
 
-.likes{
+.likes {
     color: red;
     font-size: 16px;
     margin: 35px 0 0 170px;

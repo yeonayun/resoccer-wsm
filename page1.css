@@ -27,7 +27,7 @@ nav {
     position: relative;
 }
 
-.logo a{
+.logo a {
     text-decoration-line: none;
     color:#000;
 }
@@ -90,5 +90,4 @@ nav {
         width: 100%;
         text-align: center;
     }
-
 }
