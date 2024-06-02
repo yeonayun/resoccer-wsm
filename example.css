@@ -16,7 +16,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #000;
 }
 
 header .logo {
@@ -36,7 +36,7 @@ nav {
 .menu {
     list-style: none;
     display: flex;
-    column-gap: 40px;
+    column-gap: 70px;
 }
 
 .menu li {
@@ -53,13 +53,14 @@ nav {
 @media (max-width: 600px) {
     .menu {
         display: none;
-        flex-direction: column;
         position: absolute;
         top: 100%;
-        left: 0;
-        width: 100%;
+        right: -33px;
+        width: 300%; /* 너비를 더 크게 조정 */
         background: #fff;
-        border-top: 1px solid #ddd;
+        flex-direction: column; /* 세로로 나열되도록 설정 */
+        align-items: center;
+        margin-top: 10px;
     }
 
     .menu-icon {
@@ -68,19 +69,21 @@ nav {
 
     .menu.show {
         display: flex;
-        flex-direction: column;
     }
 
     .menu.show li {
-        display: block;
-        margin: 0;
-        text-align: center;
+        width: 100%; /* 아이템들이 전체 너비를 차지하도록 설정 */
+        margin-bottom: 50px; /* 각 li 요소들의 간격을 50px로 설정 */
+    }
+
+    .menu.show li:last-child {
+        margin-bottom: 0; /* 마지막 li 요소에는 간격을 제거 */
     }
 
     .menu.show li a {
-        display: inline-block;
+        display: block;
         padding: 1rem;
-        border-bottom: 1px solid #ddd;
         width: 100%;
+        text-align: center;
     }
 }
