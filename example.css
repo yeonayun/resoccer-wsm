@@ -56,7 +56,7 @@ nav {
         position: absolute;
         top: 100%;
         right: -33px;
-        width: 300%; /* 너비를 더 크게 조정 */
+        width: 400%; /* 너비를 더 크게 조정 */
         background: #fff;
         flex-direction: column; /* 세로로 나열되도록 설정 */
         align-items: center;
