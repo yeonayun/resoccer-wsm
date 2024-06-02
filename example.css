@@ -49,6 +49,18 @@ nav {
     font-weight: bold;
 }
 
+.Rectangle {
+    margin: 9rem auto 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.Rectangle img {
+    margin-left: 1.5rem;
+}
+
 /* Media Queries */
 @media (max-width: 600px) {
     .menu {
@@ -85,5 +97,18 @@ nav {
         padding: 1rem;
         width: 100%;
         text-align: center;
+    }
+
+    .Rectangle {
+        margin: 5rem auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Rectangle img {
+        margin: 1rem 0;
+        width: 80%; /* 화면 크기에 맞게 이미지 너비 조정 */
     }
 }
