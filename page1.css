@@ -110,18 +110,9 @@ nav {
 .likes {
     color: red;
     font-size: 16px;
-    margin: 35px 0 0 170px;
+    margin: 35px 0 0 200px;
 }
 
-.emheart{
-    position: absolute;
-    margin: 310px 0 0 230px;
-}
-
-.likes{
-    color: black;
-    margin: -50px 0 0 210px;
-}
 
 @media (max-width: 600px) {
     .menu {
@@ -204,22 +195,12 @@ nav {
         width: 55px;
     }
 
-    .likes{
-        margin: 50px 0 0 180px;
-    }
-
     .best{
         margin: 8px 0 0 275px;
     }
 
-    .emheart{
-        margin: 350px 0 0 310px;
-        position: absolute;
-        z-index: 1;
-    }
-
     .likes{
-        margin: -62px 0 0 290px;
+        margin: 60px 0 0 210px;
     }
     
 }

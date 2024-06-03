@@ -11,18 +11,26 @@ function toggleMenu() {
     }
 }
 
-function toggleHeart(image) {
-    const container = image.parentElement; // image-container를 선택
-    const likes = container.querySelector('.likes'); // image-container 내에서 .likes 요소 선택
-    let count = parseInt(likes.innerHTML);
+// 좋아요 증가 및 로컬 스토리지 기능 추가
+document.addEventListener('DOMContentLoaded', () => {
+    const likeElements = document.querySelectorAll('.likes');
 
-    if (image.src.includes("emheart.png")) {
-        image.src = "fuheart.png";
-        count += 1;
-    } else {
-        image.src = "emheart.png";
-        count -= 1;
-    }
+    // 로컬 스토리지에서 좋아요 수 불러오기
+    likeElements.forEach(likeElement => {
+        const containerId = likeElement.closest('.image-container').dataset.id;
+        const storedLikes = localStorage.getItem(`likes_${containerId}`);
+        if (storedLikes !== null) {
+            likeElement.textContent = `${storedLikes} ❤`;
+        }
+    });
 
-    likes.innerHTML = count;
-}
+    likeElements.forEach(likeElement => {
+        likeElement.addEventListener('click', () => {
+            const containerId = likeElement.closest('.image-container').dataset.id;
+            const currentLikes = parseInt(likeElement.textContent);
+            const newLikes = currentLikes + 1;
+            likeElement.textContent = `${newLikes} ❤`;
+            localStorage.setItem(`likes_${containerId}`, newLikes);
+        });
+    });
+});

@@ -153,5 +153,9 @@ nav {
         width: 15rem;
         height: 10rem;
     }
+
+    .plus{
+        margin: 80px 0 0 195px;
+    }
     
 }
