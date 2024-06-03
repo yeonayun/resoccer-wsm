@@ -54,6 +54,11 @@ nav {
     font-weight: bold;
 }
 
+.mypage i{
+    color:#000;
+    font-size: 25px;
+}
+
 .best {
     position: absolute;
     width: 4.5rem; height: 1.8rem;
@@ -111,12 +116,11 @@ nav {
         display: none;
         position: absolute;
         top: 100%;
-        right: -33px;
+        right: -40px;
         width: 400%;
         background: #fff;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
     }
 
     .menu-icon {
