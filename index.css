@@ -32,10 +32,10 @@ nav {
     color:#000;
 }
 
-.menu-icon {
+.nav-toggle {
     display: none;
-    font-size: 2rem;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .menu {
@@ -57,6 +57,10 @@ nav {
 .mypage i{
     color:#000;
     font-size: 25px;
+}
+
+.bi-x-lg{
+    font-size: 30px;
 }
 
 .best {
@@ -115,20 +119,25 @@ nav {
     .menu {
         display: none;
         position: absolute;
-        top: 100%;
-        right: -40px;
-        width: 400%;
+        top: 120%;
+        right: -65px;
+        width: 550%;
+        height: 1000%;
         background: #fff;
         flex-direction: column;
         align-items: center;
+        z-index: 2;
     }
 
-    .menu-icon {
+    .nav-toggle{
         display: block;
+        cursor: pointer;
     }
 
-    .menu.show {
+    .show-menu {
         display: flex;
+        row-gap: 50px;
+        background-color: #fff;
     }
 
     .menu.show li {
@@ -136,11 +145,11 @@ nav {
         margin-bottom: 50px;
     }
 
-    .menu.show li:last-child {
+    .menu.show-menu li:last-child {
         margin-bottom: 0;
     }
 
-    .menu.show li a {
+    .menu.show-menu li a {
         display: block;
         padding: 1rem;
         width: 100%;

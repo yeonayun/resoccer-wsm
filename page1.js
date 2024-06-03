@@ -1,15 +1,20 @@
-function toggleMenu() {
-    const menu = document.querySelector('.menu');
-    const menuIcon = document.querySelector('.menu-icon');
+const toggleMenu = () => {
+    // HTML 요소를 가져옵니다
+    const navToggleDiv = document.querySelector(".nav-toggle");
+    const menuUl = document.querySelector(".menu");
+    const toggleI = navToggleDiv.querySelector("i");
 
-    menu.classList.toggle('show');
+    navToggleDiv.onclick = () => {
+        // 클래스에 show-menu를 추가하거나 제거합니다
+        menuUl.classList.toggle("show-menu");
 
-    if (menu.classList.contains('show')) {
-        menuIcon.innerHTML = '&#10005;'; // 'X' 모양
-    } else {
-        menuIcon.innerHTML = '&#9776;'; // 원래 아이콘
-    }
-}
+        // 아이콘 클래스를 변경합니다
+        toggleI.classList.toggle("bi-list");
+        toggleI.classList.toggle("bi-x-lg");
+    };
+};
+
+toggleMenu();
 
 // 좋아요 증가 및 로컬 스토리지 기능 추가
 document.addEventListener('DOMContentLoaded', () => {

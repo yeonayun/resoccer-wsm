@@ -29,13 +29,13 @@ nav {
 
 .logo a {
     text-decoration-line: none;
-    color:#000;
+    color: #000;
 }
 
-.menu-icon {
+.nav-toggle {
     display: none;
-    font-size: 2rem;
     cursor: pointer;
+    font-size: 2rem;
 }
 
 .menu {
@@ -54,9 +54,19 @@ nav {
     font-weight: bold;
 }
 
+.mypage i {
+    color: #000;
+    font-size: 25px;
+}
+
+.bi-x-lg {
+    font-size: 30px;
+}
+
 .best {
     position: absolute;
-    width: 4.5rem; height: 1.8rem;
+    width: 4.5rem;
+    height: 1.8rem;
     margin: 6px 0 0 190px;
     z-index: 1;
 }
@@ -86,24 +96,27 @@ nav {
     height: 10rem;
 }
 
-.puma, .adidas, .adidas1 {
+.puma,
+.adidas,
+.adidas1 {
     position: absolute;
     font-size: 14px;
     font-weight: bold;
     margin: -130px 0 0 20px;
 }
 
-.star, .star1 {
+.star,
+.star1 {
     height: 16px;
     position: absolute;
     margin: 200px 0 0 20px;
 }
 
-.star{
+.star {
     width: 90px;
 }
 
-.star1{
+.star1 {
     width: 55px;
 }
 
@@ -118,21 +131,25 @@ nav {
     .menu {
         display: none;
         position: absolute;
-        top: 100%;
-        right: -33px;
-        width: 400%;
+        top: 120%;
+        right: -65px;
+        width: 550%;
+        height: 1000%;
         background: #fff;
         flex-direction: column;
         align-items: center;
-        margin-top: 10px;
+        z-index: 1;
     }
 
-    .menu-icon {
+    .nav-toggle {
         display: block;
+        cursor: pointer;
     }
 
-    .menu.show {
+    .show-menu {
         display: flex;
+        row-gap: 50px;
+        background-color: #fff;
     }
 
     .menu.show li {
@@ -140,11 +157,11 @@ nav {
         margin-bottom: 50px;
     }
 
-    .menu.show li:last-child {
+    .menu.show-menu li:last-child {
         margin-bottom: 0;
     }
 
-    .menu.show li a {
+    .menu.show-menu li a {
         display: block;
         padding: 1rem;
         width: 100%;
@@ -174,33 +191,36 @@ nav {
         height: 10rem;
     }
 
-    .puma, .adidas, .adidas1 {
+    .puma,
+    .adidas,
+    .adidas1 {
         position: absolute;
         font-size: 14px;
         font-weight: bold;
         margin: -180px 0 0 95px;
     }
 
-    .star, .star1{
+    .star,
+    .star1 {
         height: 16px;
         position: absolute;
         margin: 200px 0 0 95px;
     }
 
-    .star{
+    .star {
         width: 90px;
     }
 
-    .star1{
+    .star1 {
         width: 55px;
     }
 
-    .best{
+    .best {
         margin: 8px 0 0 275px;
     }
 
-    .likes{
+    .likes {
         margin: 60px 0 0 210px;
     }
-    
+
 }
