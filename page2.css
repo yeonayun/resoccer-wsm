@@ -94,6 +94,14 @@ nav {
     height: 22rem;
 }
 
+.uploaded-image {
+    width: 15rem;
+    height: 10rem;
+    border-radius: 16px;
+    position: absolute;
+    margin: -340px 0 0 16px;
+}
+
 .overlay-image {
     position: absolute;
     top: 20px;
