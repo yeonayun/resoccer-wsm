@@ -92,6 +92,7 @@ nav {
 .base-image {
     width: 17rem;
     height: 22rem;
+    margin-left: 30px;
 }
 
 .uploaded-image {
@@ -99,7 +100,7 @@ nav {
     height: 10rem;
     border-radius: 16px;
     position: absolute;
-    margin: -340px 0 0 16px;
+    margin: -340px 0 0 46px;
 }
 
 .overlay-image {
@@ -114,7 +115,7 @@ nav {
     width: 40px;
     height: 40px;
     position: absolute;
-    margin: 70px 0 0 115px;
+    margin: 70px 0 0 145px;
 }
 
 @media (max-width: 600px) {
