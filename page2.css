@@ -231,4 +231,12 @@ nav {
         position: absolute;
         margin: -380px 0 0 95px;
     }
+
+    .form-container {
+        margin: 80px 0 0 8px;
+    }
+
+    .form-container button {
+        margin-top: 10px;
+    }
 }
