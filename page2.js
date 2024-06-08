@@ -14,6 +14,7 @@ toggleMenu();
 
 const fileInput = document.getElementById("fileInput");
 const uploadedImage = document.getElementById("uploadedImage");
+const formContainer = document.getElementById("formContainer");
 
 fileInput.addEventListener("change", function() {
     const file = this.files[0];
@@ -22,11 +23,16 @@ fileInput.addEventListener("change", function() {
         reader.onload = function(e) {
             uploadedImage.src = e.target.result;
             uploadedImage.style.display = 'block'; // 업로드된 이미지 보이기
+            formContainer.style.display = 'flex'; // 폼 보이기
         };
         reader.readAsDataURL(file);
     }
 });
 
+const reviewButton = document.querySelector(".form-container button");
 
-
+reviewButton.addEventListener("click", function() {
+    // 여기에 리뷰가 성공적으로 등록되었다는 알림을 보여주는 코드를 추가합니다.
+    alert("리뷰가 성공적으로 등록되었습니다.");
+});
 
