@@ -26,3 +26,7 @@ fileInput.addEventListener("change", function() {
         reader.readAsDataURL(file);
     }
 });
+
+
+
+

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 로컬 스토리지에서 좋아요 수 불러오기
     likeElements.forEach(likeElement => {
         const containerId = likeElement.closest('.image-container').dataset.id;
-        const storedLikes = localStorage.getItem(`likes_${containerId}`);
+        const storedLikes = localStorage.getItem(`likes_ball_${containerId}`);
         if (storedLikes !== null) {
             likeElement.textContent = `${storedLikes} ❤`;
         }
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const currentLikes = parseInt(likeElement.textContent);
             const newLikes = currentLikes + 1;
             likeElement.textContent = `${newLikes} ❤`;
-            localStorage.setItem(`likes_${containerId}`, newLikes);
+            localStorage.setItem(`likes_ball_${containerId}`, newLikes);
         });
     });
 });
