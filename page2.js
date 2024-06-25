@@ -12,6 +12,16 @@ const toggleMenu = () => {
 
 toggleMenu();
 
+const images = document.querySelectorAll('.empty');
+
+// 각 이미지에 클릭 이벤트 리스너를 추가합니다.
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        // 이미지를 클릭하면 src 속성을 Vector.png로 변경합니다.
+        image.src = 'Vector (3).png';
+    });
+});
+
 const fileInput = document.getElementById("fileInput");
 const uploadedImage = document.getElementById("uploadedImage");
 const formContainer = document.getElementById("formContainer");
@@ -35,4 +45,6 @@ reviewButton.addEventListener("click", function() {
     // 여기에 리뷰가 성공적으로 등록되었다는 알림을 보여주는 코드를 추가합니다.
     alert("리뷰가 성공적으로 등록되었습니다.");
 });
+
+
 
