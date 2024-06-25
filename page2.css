@@ -156,7 +156,7 @@ nav {
     background-color: #444;
 }
 
-.empty{
+.empty1 ,.empty2, .empty3, .empty4, .empty5{
     width: 16px;
     height: 16px;
     position: absolute;
@@ -165,7 +165,27 @@ nav {
     cursor: pointer;
 }
 
-@media (max-width: 600px) {
+.empty1{
+    margin-left: 20px;
+}
+
+.empty2{
+    margin-left: 40px;
+}
+
+.empty3{
+    margin-left: 60px;
+}
+
+.empty4{
+    margin-left: 80px;
+}
+
+.empty5{
+    margin-left: 100px;
+}
+
+@media (max-width: 500px) {
     .menu {
         display: none;
         position: absolute;
@@ -233,6 +253,35 @@ nav {
         margin: 80px 0 0 195px;
     }
 
+    .empty1 ,.empty2, .empty3, .empty4, .empty5{
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        flex-direction: column;
+        margin: 190px 0 0 0;
+        cursor: pointer;
+    }
+
+    .empty1{
+        margin: 200px 0 0 100px;
+    }
+
+    .empty2{
+        margin: 200px 0 0 120px;
+    }
+
+    .empty3{
+        margin: 200px 0 0 140px;
+    }
+
+    .empty4{
+        margin: 200px 0 0 160px;
+    }
+
+    .empty5{
+        margin: 200px 0 0 180px;
+    }
+    
     .uploaded-image {
         width: 15rem;
         height: 10rem;

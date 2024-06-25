@@ -12,7 +12,7 @@ const toggleMenu = () => {
 
 toggleMenu();
 
-const images = document.querySelectorAll('.empty');
+const images = document.querySelectorAll('.empty1, .empty2, .empty3, .empty4, .empty5');
 
 // 각 이미지에 클릭 이벤트 리스너를 추가합니다.
 images.forEach(image => {
