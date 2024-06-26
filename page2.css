@@ -185,7 +185,7 @@ nav {
     margin-left: 100px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .menu {
         display: none;
         position: absolute;
