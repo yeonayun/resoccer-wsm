@@ -115,6 +115,8 @@ nav {
     margin: 35px 0 0 170px;
 }
 
+
+
 @media screen and (max-width: 600px) {
     .menu {
         display: none;

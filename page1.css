@@ -126,7 +126,6 @@ nav {
     margin: 35px 0 0 200px;
 }
 
-
 @media screen and (max-width: 600px) {
     .menu {
         display: none;
@@ -222,5 +221,4 @@ nav {
     .likes {
         margin: 60px 0 0 210px;
     }
-
 }
