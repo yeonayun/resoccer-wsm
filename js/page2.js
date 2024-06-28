@@ -18,7 +18,7 @@ const images = document.querySelectorAll('.empty1, .empty2, .empty3, .empty4, .e
 images.forEach(image => {
     image.addEventListener('click', () => {
         // 이미지를 클릭하면 src 속성을 Vector.png로 변경합니다.
-        image.src = 'Vector (3).png';
+        image.src = 'images/Vector (3).png';
     });
 });
 
